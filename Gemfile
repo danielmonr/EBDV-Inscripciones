@@ -47,3 +47,8 @@ group :development do
   gem 'bootstrap-sass', '3.2.0.0'
 end
 
+group :production do
+    gem 'unicorn'
+    gem 'bootstrap-sass', '3.2.0.0'
+end
+

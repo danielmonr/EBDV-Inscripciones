@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: EBDV_2016
-  username: ebdv
-  password: <%= ENV['PRUEBA_DATABASE_PASSWORD'] %>
+  username: rails
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
