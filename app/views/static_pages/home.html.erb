@@ -1,0 +1,17 @@
+<h4>Bienvenido a la platorma de inscripciones de la EBDV 2016</h4>
+<div class="jumbotron">
+	<h3>Resumen</h3>
+	<div class="row">
+		<div class="container col-md-6">
+			<p>N° niños inscritos: <%= @nkids %></p>
+		</div>
+		<div class="container col-md-6">
+			<p>Total de ingresos: <%= @cash %></p>
+		</div>
+	</div>
+</div>
+<div>
+	<%= button_to "Inscribir", new_kid_path , :method => "get" , class:"btn  btn-default"%>
+</br>
+	<%= button_to "Buscar", kids_path, :method => "get", class:"btn btn-default"%>
+</div>

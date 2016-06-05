@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Niños</h1>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>Edad</th>
+      <th>Pagado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kids.each do |kid| %>
+      <tr>
+        <td><%= kid.name %></td>
+        <td><%= kid.lastf %></td>
+        <td><%= kid.lastm %></td>
+        <td><%= kid.age %></td>
+        <td><%= kid.pay %></td>
+        <td><%= link_to 'Ver', kid %></td>
+        <td><%= link_to 'Editar', edit_kid_path(kid) %></td>
+        <td><%= link_to 'Quitar', kid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<center><%= link_to 'Inscribir', new_kid_path, class:"btn btn-default"%></center>

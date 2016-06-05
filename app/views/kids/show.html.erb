@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @kid.name %>
+</p>
+
+<p>
+  <strong>Apellido Paterno:</strong>
+  <%= @kid.lastf %>
+</p>
+
+<p>
+  <strong>Apellido Materno:</strong>
+  <%= @kid.lastm %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @kid.age %>
+</p>
+
+<p>
+  <strong>Nombre Madre:</strong>
+  <%= @kid.nmother %>
+</p>
+
+<p>
+  <strong>Nombre Padre:</strong>
+  <%= @kid.nfather %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @kid.address %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @kid.phone %>
+</p>
+
+<p>
+  <strong>Telefono adicional:</strong>
+  <%= @kid.exphone %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @kid.celphone %>
+</p>
+
+<%= link_to 'Editar', edit_kid_path(@kid) %> |
+<%= link_to 'Regresar', home_path %>
