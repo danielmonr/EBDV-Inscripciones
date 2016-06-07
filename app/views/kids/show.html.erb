@@ -16,6 +16,11 @@
 </p>
 
 <p>
+  <strong>Pagado:</strong>
+  <%= @kid.pay %>
+</p>
+
+<p>
   <strong>Edad:</strong>
   <%= @kid.age %>
 </p>
@@ -50,5 +55,19 @@
   <%= @kid.celphone %>
 </p>
 
-<%= link_to 'Editar', edit_kid_path(@kid) %> |
-<%= link_to 'Regresar', home_path %>
+<p>
+  <strong>Alergias:</strong>
+  <%= @kid.alergy %>
+</p>
+
+<p>
+  <strong>Recoge:</strong>
+  <%= @kid.pick_up %>
+</p>
+<center>
+<%= link_to 'Editar', edit_kid_path(@kid), class:"btn btn-default"%> &nbsp;
+<%= link_to 'Regresar', home_path, class:"btn btn-default" %>
+</br>
+</br>
+<%= button_to 'Nuevo niño', new_kid_path, method:'get', class:"btn btn-default btn-primary" %>
+</center>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Costos</h1>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Cantidad</th>
+      <th>Dueño</th>
+      <th>Descripcion</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @outcomes.each do |outcome| %>
+      <tr>
+        <td><%= outcome.amount %></td>
+        <td><%= outcome.owner %></td>
+        <td><%= outcome.description %></td>
+        <td><%= link_to 'Editar', edit_outcome_path(outcome) %></td>
+        <td><%= link_to 'Eliminar', outcome, method: :delete, data: { confirm: 'Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Costo', new_outcome_path, class:"btn btn-default" %>

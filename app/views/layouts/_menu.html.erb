@@ -1,0 +1,11 @@
+<nav>
+	<ul class="nav navbar-nav navbar-right">
+		<% if admin_logged_in? %>
+			<li><%= link_to "Resumen", static_pages_balance_path %></li>
+			<li><%= link_to "Inscripciones", home_path %></li>
+			<li><%= link_to "Ingresos", incomes_path %></li>
+			<li><%= link_to "Costos", outcomes_path %></li>
+		<% end %>
+		<li><%= link_to "Cerrar sesión", logout_path, method: "delete" %></li>
+	</ul>
+</nav>

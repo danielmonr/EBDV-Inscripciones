@@ -53,6 +53,10 @@ body {
 	padding-top: 100px;
 }
 
+.green_container {
+	background-color: rgba(0, 255, 0, 0.7);
+}
+
 section { overflow: auto;}
 textarea { resize: vertical;}
 .center { text-align: center;}
@@ -79,6 +83,21 @@ p {
 	line-height: 1.7em;
 }
 
+.title {
+	color: rgba(255,255,255,0.7);
+	padding-top: 30px;
+	text-align:center;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+.info-panel {
+	font-size:20px;
+	line-height: normal;
+}
 
 /* forms */
 
@@ -115,3 +134,4 @@ input {
 		color: $state-danger-text;
 	}
 }
+

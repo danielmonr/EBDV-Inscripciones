@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  get 'static_pages/balance'
+
+  resources :outcomes
+  resources :outcomes
+  resources :incomes
   get 'static_pages/home', as: :home
+  post 'static_pages/home' => 'static_pages#saldar'
 
   get 'static_pages/about'
 

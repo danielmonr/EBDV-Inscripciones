@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 	  if user
 		  if user.password == params[:session][:password]
 			  log_in user
-			  redirect_to home_path and return
+			  redirect_to static_pages_balance_path and return
 		  else
 			  flash.now[:danger] = 'Contrasena invalida'
 			  render 'new'

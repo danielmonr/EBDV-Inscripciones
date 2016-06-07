@@ -1,0 +1,52 @@
+<h4>Resumen al día de la EBDV 2016</h4>
+<div class="jumbotron">
+	<h3>Resumen</h3>
+	<div class="row">
+		<div class="container col-md-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="huge"><%= @bal %></div>
+					<div class="descripcion">Balance</div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-md-3">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<div class="huge"><%= @inc %></div>
+					<div class="descripcion">Ingresos</div>
+				</div>
+				<div class="panel-footer">
+					<%= link_to "Ver detalles", incomes_path %>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-md-3">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<div class="huge"><%= @outc %></div>
+					<div class="descripcion">Costos</div>
+				</div>
+				<div class="panel-footer">
+					<%= link_to "Ver detalles", outcomes_path %>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-md-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="info-panel">Niños inscritos: <%= @nkids %></div>
+					<div class="info-panel">Niños saldados: <%= @pkids %></div>
+				</div>
+				<div class="panel-footer">
+					<%= link_to "Ver detalles", kids_path %>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<p></p>
+			<p></p>
+		</div>
+	</div>
+</div>

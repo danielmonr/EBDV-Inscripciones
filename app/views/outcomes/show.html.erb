@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @outcome.amount %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @outcome.owner %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @outcome.description %>
+</p>
+
+<%= link_to 'Edit', edit_outcome_path(@outcome) %> |
+<%= link_to 'Back', outcomes_path %>
